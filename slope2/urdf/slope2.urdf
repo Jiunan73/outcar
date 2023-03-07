@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="slope2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.140312444011041 0.0406896282287972 -0.0455942620430078"
+        rpy="0 0 0" />
+      <mass
+        value="45.7809789080786" />
+      <inertia
+        ixx="9.88051098086247"
+        ixy="4.08214893060938E-12"
+        ixz="9.46261351854374E-13"
+        iyy="22.6737326644668"
+        iyz="-8.3449645673351E-13"
+        izz="32.1471749189845" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://slope2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://slope2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="block">
+    <inertial>
+      <origin
+        xyz="1.4684 0.5 0.13501"
+        rpy="0 0 0" />
+      <mass
+        value="5.3689" />
+      <inertia
+        ixx="0.4024"
+        ixy="7.3518E-13"
+        ixz="-0.00015733"
+        iyy="3.7492"
+        iyz="-7.22E-14"
+        izz="4.1041" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://slope2/meshes/block.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://slope2/meshes/block.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1"
+    type="fixed">
+    <origin
+      xyz="-1.60919340721111 0.147466128390666 -0.459310371771112"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="block" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
