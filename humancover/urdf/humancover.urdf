@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="humancover">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0130722077296431 0.0061268799215675 -0.000468556172875034"
+        rpy="0 0 0" />
+      <mass
+        value="3.19454847212678" />
+      <inertia
+        ixx="0.0627724300121665"
+        ixy="-4.33005869170986E-05"
+        ixz="7.24213169902427E-20"
+        iyy="0.0319479383245792"
+        iyz="1.35525271560688E-19"
+        izz="0.0943863850311392" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humancover/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humancover/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
